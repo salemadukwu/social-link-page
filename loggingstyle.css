@@ -1,0 +1,46 @@
+body {
+  color: azure;
+  background-color: #141414;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.introduction {
+  color: white;
+  background-color: #1f1f1f;
+  padding: 30px 20px;
+  width: 320px;
+  border-radius: 18px;
+  box-shadow: rgb(102, 101, 101);
+}
+
+.bio {
+  font-size: small;
+  margin-top: 20px;
+}
+
+.introduction img {
+  width: 120px;
+  height: 120px;
+  border-radius: 100px;
+}
+.links a {
+  display: block;
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  margin: 8px 0;
+  font-weight: bold;
+  margin-block: 12px;
+  padding-bottom: 20px;
+  block-size: 6px;
+}
+
+.links a:hover {
+  background-color: gray;
+}
