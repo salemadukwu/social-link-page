@@ -1,46 +1,82 @@
+/* === General Styles === */
 body {
   color: azure;
   background-color: #141414;
   font-family: Arial, sans-serif;
-  text-align: center;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  margin-top: 30px;
+  min-height: 100vh;
+  margin: 0;
+  padding: 30px;
+  text-align: center;
 }
 
+/* === Introduction Card === */
 .introduction {
   color: white;
   background-color: #1f1f1f;
   padding: 30px 20px;
   width: 320px;
   border-radius: 18px;
-  box-shadow: rgb(102, 101, 101);
+  box-shadow: 0 6px 20px rgba(102, 101, 101, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.bio {
-  font-size: small;
-  margin-top: 20px;
+.introduction:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.1);
 }
 
+/* === Profile Image === */
 .introduction img {
   width: 120px;
   height: 120px;
-  border-radius: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid #333;
 }
+
+/* === Bio Section === */
+.bio {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-top: 15px;
+  line-height: 1.5;
+}
+
+/* === Links Section === */
+.links {
+  margin-top: 25px;
+}
+
 .links a {
   display: block;
   background: #333;
   color: #fff;
   text-decoration: none;
-  padding: 12px 30px;
+  padding: 12px 0;
   border-radius: 8px;
-  margin: 8px 0;
+  margin: 10px 0;
   font-weight: bold;
-  margin-block: 12px;
-  padding-bottom: 20px;
-  block-size: 6px;
+  transition: all 0.3s ease;
 }
 
 .links a:hover {
-  background-color: gray;
+  background-color: #555;
+  transform: scale(1.05);
+}
+
+/* === Responsive Design === */
+@media (max-width: 400px) {
+  .introduction {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .links a {
+    font-size: 0.9rem;
+  }
 }
